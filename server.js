@@ -6,7 +6,7 @@ const app=express();
 app.use(express.static('./dist/Project'));
 
 app.get('/*',function(req,res){
-    res.sendFile(path.join(__dirname,'/dist/ServiceAustralia}/index.html'));
+    res.sendFile(path.join(__dirname,'/dist/Project}/index.html'));
 
 });
 
