@@ -1,0 +1,18 @@
+a{
+    font-family: 'Roboto Mono', monospace;
+    color:white
+}
+
+.leftbar{
+    padding-left:13%;
+    
+ }
+ 
+ .leftbarItem{
+     padding-left:15px;
+ }
+ 
+ .rightbar{
+     padding-left: 2%;
+ }
+ 

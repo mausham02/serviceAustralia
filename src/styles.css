@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+
+.btn-google {
+    color: white;
+    background-color: #ea4335;
+  }
+  
+.btn-facebook {
+    color: white;
+    background-color: #3b5998;
+  }
