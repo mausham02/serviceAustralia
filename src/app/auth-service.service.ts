@@ -1,8 +1,10 @@
 import { Injectable, Output, EventEmitter } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import { Router } from '@angular/router';
+import { environment } from 'src/environments/environment';
 
 
+const BACKEND_URL=environment.apiUrl;
 
 
 @Injectable({
@@ -10,9 +12,11 @@ import { Router } from '@angular/router';
 })
 export class AuthServiceService {
 
+ 
+ 
 
-  private _registerUrl='http://' + window.location.hostname+'/register';
-  private _loginUrl='http://' + window.location.hostname+'/login';
+  private _registerUrl=BACKEND_URL+'/register';
+  private _loginUrl=BACKEND_URL+'/login';
 
   constructor(private http: HttpClient,
     private router: Router) { }
@@ -25,6 +29,7 @@ export class AuthServiceService {
     return this.http.post(this._registerUrl,user)
   }
   loginUser(user){
+    console.log(BACKEND_URL)
    
     return this.http.post(this._loginUrl, user)
   }
