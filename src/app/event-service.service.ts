@@ -5,8 +5,8 @@ import {HttpClient} from '@angular/common/http';
   providedIn: 'root'
 })
 export class EventServiceService {
-  private _eventsURL="http://localhost:3000/events";
-  private _specialURL="http://localhost:3000/special";
+  private _eventsURL='http://' + window.location.hostname+':3000'+'/events';
+  private _specialURL='http://' + window.location.hostname+':3000'+'/special';
 
   constructor(private http: HttpClient) { }
 
