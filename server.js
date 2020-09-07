@@ -61,15 +61,15 @@ const User=new mongoose.model("User", userSchema)
 
 
 // Creating API
-// app.get('/*',function(req,res){
-//     res.sendFile(path.join(__dirname,'/dist/Project}/index.html'));
+app.get('/*',function(req,res){
+    res.sendFile(path.join(__dirname,'/dist/Project}/index.html'));
 
-// });
+});
 
 // Get request to homepage
-app.get('/', (req, res)=>{
-    res.send("Hello from server")
-})
+// app.get('/', (req, res)=>{
+//     res.send("Hello from server")
+// })
 
 
 // Registering users
