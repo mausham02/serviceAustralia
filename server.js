@@ -15,7 +15,7 @@ app.use(bodyParser.json())
 app.use(express.static('./dist/Project'));
 
 // connecting to the database
-mongoose.connect("mongodb+srv://mausham01:mausham01@eventsdb.skijs.mongodb.net/userdb?retryWrites=true&w=majority",
+mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://mausham01:mausham01@eventsdb.skijs.mongodb.net/userdb?retryWrites=true&w=majority",
 {useNewUrlParser: true, useUnifiedTopology: true},
 (err)=>{
     if(err){
@@ -189,6 +189,6 @@ app.get('/special',verifyToken,(req,res)=>{
 
 
 
-app.listen(process.env.PORT || 3000, (req,res)=>{
+app.listen(process.env.PORT, (req,res)=>{
     console.log('Server started on port '+ 3000);
 })
