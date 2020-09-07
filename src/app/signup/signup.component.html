@@ -1,63 +1,23 @@
-<div class="container">
-    <div class="row">
+<div class="row">
+    <div class="col-md-6 mx-auto">
+        <div class="card rounded-0">
+            <div class="card-header">
+                <h3 class="mb-0"></h3>
+            </div>
+            <div class="card-body">
+                <form class="form">
+                    <div class="form-group">
+                        <label for="">Email</label>
+                        <input type="text" class="form-control rounder-0" name="email" required [(ngModel)]="registerUserData.email">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Password</label>
+                        <input type="password" class="form-control rounder-0" name="password" required [(ngModel)]="registerUserData.password">
+                    </div>
 
-       
-        
-      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
-        <div class="card card-signin my-5">
-          <div class="card-body">
-            <h5 class="card-title text-center">Sign Up</h5>
-            <form class="form-signin">
-             
-            <label for="firstName">First name</label>
-            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
-            <div class="invalid-feedback">
-              Valid first name is required.
+                    <button class="btn btn-primary" style="float:right" (click)="registerUser()">Submit</button>
+                </form>
             </div>
-         
-            <label for="lastName">Last name</label>
-            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
-            <div class="invalid-feedback">
-              Valid last name is required.
-            </div>
-         
-    
-       
-          <label for="username">Username</label>
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text">@</span>
-            </div>
-            <input type="text" class="form-control" id="username" placeholder="Username" required>
-            <div class="invalid-feedback" style="width: 100%;">
-              Your username is required.
-            </div>
-          </div>
-        
-
-       
-          <label for="username">Email</label>
-            <input type="email" class="form-control" id="email" placeholder="you@example.com">
-            <div class="invalid-feedback">
-              Please enter a valid email address for shipping updates.
-            </div>
-              <div class="form-label-group">
-                  <label for="inputPassword">Password</label>
-                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-              </div>
-
-            
-              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign Up</button>
-              <hr class="my-4">
-              <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit" ><i class="fa fa-google mr-2"></i> Sign in with Google</button>
-              <button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit"><i class="fa fa-facebook-f mr-2"></i> Sign in with Facebook</button>
-            </form>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
-
-
-
-
+</div>
