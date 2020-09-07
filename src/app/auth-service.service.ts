@@ -11,8 +11,8 @@ import { Router } from '@angular/router';
 export class AuthServiceService {
 
 
-  private _registerUrl='http://' + window.location.hostname+':3000'+'/register';
-  private _loginUrl='http://' + window.location.hostname+':3000'+'/login';
+  private _registerUrl='http://' + window.location.hostname+':5000'+'/register';
+  private _loginUrl='http://' + window.location.hostname+':5000'+'/login';
 
   constructor(private http: HttpClient,
     private router: Router) { }
