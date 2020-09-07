@@ -7,8 +7,8 @@ import { Router } from '@angular/router';
 export class AuthServiceService {
 
 
-  private _registerUrl="http://localhost:3000/register";
-  private _loginUrl="http://localhost:3000/login";
+  private _registerUrl="http://localhost:9316/register";
+  private _loginUrl="http://localhost:9316/login";
 
   constructor(private http: HttpClient,
     private router: Router) { }
