@@ -64,10 +64,10 @@ const User=new mongoose.model("User", userSchema)
 
 
 // Creating API
-app.get('/*',function(req,res){
-    res.sendFile(path.join(__dirname,'/dist/Project}/index.html'));
+// app.get('/*',function(req,res){
+//     res.sendFile(path.join(__dirname,'/dist/Project}/index.html'));
 
-});
+// });
 
 // Get request to homepage
 // app.get('/', (req, res)=>{
@@ -118,6 +118,9 @@ app.post("/login",(req,res)=>{
 })
 
 
+
+
+
 // events API
 
 app.get('/events',(req,res)=>{
@@ -158,6 +161,7 @@ app.get('/events',(req,res)=>{
 
 
 app.get('/special',verifyToken,(req,res)=>{
+  
     let events=[
         {
             "_id":"1",
