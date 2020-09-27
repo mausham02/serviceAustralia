@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment';
 
 
-const BACKEND_URL=environment.apiUrl;
+const BACKEND_URL='';
 
 
 @Injectable({

@@ -128,17 +128,17 @@ app.get('/events',(req,res)=>{
         {
             "_id":"1",
             "name": "Mausham Shrestha",
-            "description":"He is the king of programming"
+            "description":"He is the SOrry!!"
         },
         {
             "_id":"2",
             "name": "Romit Maharjan",
-            "description":"He is the master of AWS"
+            "description":"He is the self proclaimed king of AWS"
         },
         {
             "_id":"3",
             "name": "Birendra Rokaha",
-            "description":"Has basic knowledge of everything"
+            "description":"BETTER THAN ROMIT In AWS"
         },
         {
             "_id":"4",
