@@ -64,7 +64,7 @@ const User=new mongoose.model("User", userSchema)
 
 
 // Creating API
-app.get('/*',function(req,res){
+app.get('/',function(req,res){
     res.sendFile(path.join(__dirname,'/dist/Project}/index.html'));
 
 });
